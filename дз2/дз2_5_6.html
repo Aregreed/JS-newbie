@@ -1,0 +1,41 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+function add(a, b) {
+	return a + b
+	}
+function sub(a, b) {
+	return a - b
+	}
+function mul(a, b) {
+	return a * b
+	}
+function div(a, b) {
+	return a / b
+	}
+function mathOperation(a, b, operation) {
+		if (isNaN(a) || isNaN(b)) {
+			return NaN
+		} else {
+			switch(operation) {
+				case "add":
+				return add(a, b)
+				case "sub":
+				return sub(a, b)
+				case "mul":
+				return mul(a, b)
+				case "div":
+				return div(a, b)
+				default:
+				return null
+			}
+		}
+	}
+	var a = 8;
+	var b = 4;
+	alert(mathOperation(a, b, "div"));
+	if (null == 0) {
+		alert("итог равен 0");
+	} else {
+		alert("итог не равен 0")
+	}
+</script>
