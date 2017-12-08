@@ -1,0 +1,31 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+function num_to_obj(num)
+{
+    var arr_number = number.split('');
+    while (arr_number.length < 3)
+    {
+    	arr_number.unshift(0);
+    }
+    var obj_number = {};
+    if (arr_number.length > 3)
+    {
+    	return null;
+    }
+    else
+    {
+    	obj_number['сотни'] = +arr_number[0]; 
+    	obj_number['десятки'] = +arr_number[1]; 
+    	obj_number['единицы'] = +arr_number[2];
+        return obj_number;
+    }
+}
+var number = prompt("Введите число от 0 до 999");
+var obj_number = num_to_obj(number);
+if (obj_number == null)
+{
+	console.log("объект равен 0");
+}
+    console.log(obj_number);
+num_to_obj();
+</script>
