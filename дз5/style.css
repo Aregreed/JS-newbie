@@ -3,15 +3,18 @@ table {
   font-size: 40px;
   background-color: #DFDFDF;
   color: #3a2702;
+  border: 0.1px solid black;
 }
 td {
   height: 50px;
   width: 50px;
   text-align: center;
   vertical-align: middle;
+  border: 0.1px solid black;
 }
 tr:nth-child(even) td:nth-child(odd) {
   background-color: #B28D6E;
+  border-color: black;
 }
 tr:nth-child(odd) td:nth-child(even) {
   background-color: #B28D6E;
